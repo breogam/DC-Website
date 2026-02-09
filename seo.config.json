@@ -1,0 +1,64 @@
+{
+  "brand": {
+    "name": "DC Website",
+    "themeColor": "#0a0a0a",
+    "favicon": "/favicon.ico",
+    "ogImageWidth": 1200,
+    "ogImageHeight": 630,
+    "defaultOgImage": "/images/og-default.png"
+  },
+  "preconnect": [
+    "https://fonts.googleapis.com",
+    "https://fonts.gstatic.com"
+  ],
+  "pages": {
+    "home": {
+      "url": "https://dc-website.com/",
+      "title": "DC Website | Modern Digital Solutions",
+      "description": "Discover modern digital solutions with DC Website. We build fast, accessible, and beautifully crafted web experiences. Get started today.",
+      "type": "home",
+      "ogType": "website",
+      "structuredData": ["Organization", "BreadcrumbList"]
+    },
+    "about": {
+      "url": "https://dc-website.com/about",
+      "title": "About Us | DC Website",
+      "description": "Learn about DC Website's mission to deliver high-quality digital solutions. Meet our team and discover what drives us to build better web experiences.",
+      "type": "about",
+      "ogType": "website",
+      "structuredData": ["BreadcrumbList"]
+    },
+    "products": {
+      "url": "https://dc-website.com/products",
+      "title": "Our Products | DC Website",
+      "description": "Explore DC Website's suite of digital products designed for performance and usability. Find the right solution for your business needs.",
+      "type": "product",
+      "ogType": "website",
+      "structuredData": ["Product", "BreadcrumbList"]
+    },
+    "pricing": {
+      "url": "https://dc-website.com/pricing",
+      "title": "Pricing Plans | DC Website",
+      "description": "View transparent pricing plans from DC Website. Choose the plan that fits your needs with flexible options for teams of all sizes.",
+      "type": "pricing",
+      "ogType": "website",
+      "structuredData": ["BreadcrumbList"]
+    },
+    "blog": {
+      "url": "https://dc-website.com/blog",
+      "title": "Blog | DC Website",
+      "description": "Read the latest insights on web development, design, and digital strategy from the DC Website team. Stay ahead with expert tips and tutorials.",
+      "type": "blog-post",
+      "ogType": "blog",
+      "structuredData": ["BreadcrumbList"]
+    },
+    "contact": {
+      "url": "https://dc-website.com/contact",
+      "title": "Contact Us | DC Website",
+      "description": "Get in touch with DC Website. Whether you have questions, need support, or want to start a project, we're here to help. Reach out today.",
+      "type": "contact",
+      "ogType": "website",
+      "structuredData": ["BreadcrumbList"]
+    }
+  }
+}
