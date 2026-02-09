@@ -61,7 +61,7 @@
   }
   </script>
 
-  <!-- STRUCTURED DATA: WebSite (enables sitelinks search box) -->
+  <!-- STRUCTURED DATA: WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -75,31 +75,116 @@
     }
   }
   </script>
+
+  <!-- DARK MODE: Prevent flash of wrong theme (blocking) -->
+  <script>
+    (function(){var t=localStorage.getItem('dc-theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <!-- Skip to content link for accessibility -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header role="banner">
-    <nav aria-label="Main navigation">
-      <a href="/" aria-label="DC Website home">DC Website</a>
-      <ul>
+  <header class="site-header" role="banner">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/" class="site-nav__logo" aria-label="DC Website home">DC</a>
+      <ul class="site-nav__links">
         <li><a href="/about">About</a></li>
         <li><a href="/products">Products</a></li>
         <li><a href="/pricing">Pricing</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
+      <div class="site-nav__actions">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="theme-toggle__moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-toggle__sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main id="main-content" role="main">
-    <h1>Welcome to DC Website</h1>
-    <p>Modern digital solutions built for performance and accessibility.</p>
+
+    <!-- HERO -->
+    <section class="hero container">
+      <span class="hero__badge">Trusted by 2,000+ teams worldwide</span>
+      <h1 class="hero__title">Ship your best work <em>3x faster</em></h1>
+      <p class="hero__subtitle">Stop wrestling with slow tools. DC Website gives your team a performance-first platform that loads in under 1 second and converts 40% more visitors.</p>
+      <div class="btn-group">
+        <a href="/pricing" class="btn btn--primary">Start your free trial</a>
+        <a href="/products" class="btn btn--secondary">See how it works</a>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="container reveal">
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__number">3x</div>
+          <div class="stat__label">Faster load times</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">40%</div>
+          <div class="stat__label">More conversions</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">99.9%</div>
+          <div class="stat__label">Uptime guaranteed</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">2,000+</div>
+          <div class="stat__label">Teams shipping daily</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features container">
+      <div class="section__header reveal">
+        <span class="section__label">Why teams switch</span>
+        <h2 class="section__title">Everything you need to launch faster</h2>
+        <p class="section__subtitle">No bloat. No lock-in. Your team gets a lean, powerful toolkit that stays out of the way.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card reveal reveal-delay-1">
+          <div class="card__icon" aria-hidden="true">&#9889;</div>
+          <h3 class="card__title">Sub-second performance</h3>
+          <p class="card__text">Every page loads in under 1 second. Your visitors stay engaged, your bounce rate drops, and your SEO scores climb.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="card__icon" aria-hidden="true">&#9851;</div>
+          <h3 class="card__title">Built-in accessibility</h3>
+          <p class="card__text">WCAG AA compliant out of the box. Reach 100% of your audience without retrofitting or third-party overlays.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <div class="card__icon" aria-hidden="true">&#128736;</div>
+          <h3 class="card__title">Developer-first workflow</h3>
+          <p class="card__text">Clean APIs, zero config defaults, and hot reload. Your team ships features instead of fighting tooling.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="container">
+      <div class="cta reveal">
+        <h2 class="cta__title">Ready to build something remarkable?</h2>
+        <p class="cta__text">Join 2,000+ teams who stopped compromising on speed. Your 14-day free trial starts now.</p>
+        <a href="/pricing" class="btn btn--primary">Start building for free</a>
+      </div>
+    </section>
+
   </main>
 
-  <footer role="contentinfo">
-    <p>&copy; 2026 DC Website. All rights reserved.</p>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 DC Website. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="/main.js" defer></script>
 </body>
 </html>

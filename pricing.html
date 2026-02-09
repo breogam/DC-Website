@@ -88,30 +88,130 @@
     ]
   }
   </script>
+
+  <!-- DARK MODE: Prevent flash -->
+  <script>
+    (function(){var t=localStorage.getItem('dc-theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header role="banner">
-    <nav aria-label="Main navigation">
-      <a href="/" aria-label="DC Website home">DC Website</a>
-      <ul>
+  <header class="site-header" role="banner">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/" class="site-nav__logo" aria-label="DC Website home">DC</a>
+      <ul class="site-nav__links">
         <li><a href="/about">About</a></li>
         <li><a href="/products">Products</a></li>
         <li><a href="/pricing" aria-current="page">Pricing</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
+      <div class="site-nav__actions">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="theme-toggle__moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-toggle__sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main id="main-content" role="main">
-    <h1>Pricing Plans</h1>
-    <p>Transparent pricing with flexible options for teams of all sizes.</p>
+
+    <!-- HERO -->
+    <section class="hero container">
+      <span class="hero__badge">14-day free trial on every plan</span>
+      <h1 class="hero__title">One price. <em>No surprises.</em></h1>
+      <p class="hero__subtitle">Transparent pricing that scales with your team. No hidden fees, no per-seat charges, no usage gotchas.</p>
+    </section>
+
+    <!-- PRICING CARDS -->
+    <section class="container">
+      <div class="pricing-grid">
+        <div class="pricing-card reveal reveal-delay-1">
+          <h3 class="pricing-card__name">Starter</h3>
+          <div class="pricing-card__price">$29<span>/mo</span></div>
+          <p class="pricing-card__desc">For solo creators and small projects that need serious performance.</p>
+          <ul class="pricing-card__features">
+            <li>3 projects</li>
+            <li>50 GB bandwidth</li>
+            <li>Custom domain + SSL</li>
+            <li>Core Web Vitals monitoring</li>
+            <li>Email support (under 24h)</li>
+          </ul>
+          <a href="#" class="btn btn--secondary" style="width: 100%; justify-content: center;">Start free trial</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal reveal-delay-2">
+          <span class="pricing-card__badge">Most popular</span>
+          <h3 class="pricing-card__name">Professional</h3>
+          <div class="pricing-card__price">$79<span>/mo</span></div>
+          <p class="pricing-card__desc">For growing teams who need analytics, collaboration, and priority support.</p>
+          <ul class="pricing-card__features">
+            <li>Unlimited projects</li>
+            <li>500 GB bandwidth</li>
+            <li>DC Analytics included</li>
+            <li>Team collaboration (up to 10)</li>
+            <li>Priority support (under 4h)</li>
+            <li>Staging environments</li>
+          </ul>
+          <a href="#" class="btn btn--primary" style="width: 100%; justify-content: center;">Start free trial</a>
+        </div>
+
+        <div class="pricing-card reveal reveal-delay-3">
+          <h3 class="pricing-card__name">Enterprise</h3>
+          <div class="pricing-card__price">Custom</div>
+          <p class="pricing-card__desc">For organizations that need SLA guarantees, SSO, and dedicated infrastructure.</p>
+          <ul class="pricing-card__features">
+            <li>Everything in Professional</li>
+            <li>Unlimited bandwidth</li>
+            <li>SSO / SAML integration</li>
+            <li>99.99% uptime SLA</li>
+            <li>Dedicated account manager</li>
+            <li>Custom contracts</li>
+          </ul>
+          <a href="/contact" class="btn btn--secondary" style="width: 100%; justify-content: center;">Talk to sales</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="features container">
+      <div class="section__header reveal">
+        <span class="section__label">FAQ</span>
+        <h2 class="section__title">Common questions, straight answers</h2>
+      </div>
+      <div class="card-grid" style="max-width: 800px; margin-inline: auto;">
+        <div class="card reveal">
+          <h3 class="card__title">Can I switch plans anytime?</h3>
+          <p class="card__text">Yes. Upgrade or downgrade from your dashboard instantly. Changes prorate to the day — you only pay for what you use.</p>
+        </div>
+        <div class="card reveal">
+          <h3 class="card__title">What happens after the trial?</h3>
+          <p class="card__text">Your projects stay live. After 14 days, pick a plan to keep going. No data deleted, no pressure tactics.</p>
+        </div>
+        <div class="card reveal">
+          <h3 class="card__title">Do you offer refunds?</h3>
+          <p class="card__text">30-day money-back guarantee on all plans. If DC doesn't deliver, you get a full refund. No questions asked.</p>
+        </div>
+        <div class="card reveal">
+          <h3 class="card__title">Is there a discount for annual billing?</h3>
+          <p class="card__text">Yes — save 20% when you pay annually. That's 2.4 months free on every plan.</p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer role="contentinfo">
-    <p>&copy; 2026 DC Website. All rights reserved.</p>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 DC Website. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="/main.js" defer></script>
 </body>
 </html>
