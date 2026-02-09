@@ -1,0 +1,141 @@
+/*
+ * Design Tokens — Dynamic Colors Inc
+ * Aesthetic: Luxury | Mood: Warm & Approachable | Industry: Home Services
+ * Brand palette anchored on #F36525 (orange) and #0F75E0 (blue)
+ *
+ * Type scale ratio: 1.25 (Major Third)
+ * Spacing base: 4px
+ */
+
+:root {
+  /* ───────────────────────── Brand Colors ───────────────────────── */
+  --color-brand-50: #fef3ec;
+  --color-brand-100: #fde0cc;
+  --color-brand-300: #f8a46e;
+  --color-brand-500: #f36525;
+  --color-brand-700: #c44b14;
+  --color-brand-900: #7a2e0a;
+
+  --color-accent-50: #ebf3fe;
+  --color-accent-100: #c6dffb;
+  --color-accent-300: #5fa3ec;
+  --color-accent-500: #0f75e0;
+  --color-accent-700: #0b5aad;
+  --color-accent-900: #073b72;
+
+  /* ───────────────────────── Neutrals (warm bias) ───────────────── */
+  --color-neutral-50: #faf9f7;
+  --color-neutral-100: #f0eeeb;
+  --color-neutral-200: #e0ddd8;
+  --color-neutral-300: #c7c2ba;
+  --color-neutral-400: #a39d94;
+  --color-neutral-500: #7a756c;
+  --color-neutral-600: #5c5850;
+  --color-neutral-700: #433f39;
+  --color-neutral-800: #2c2924;
+  --color-neutral-900: #1a1815;
+
+  /* ───────────────────────── Semantic Colors ────────────────────── */
+  --color-success: #2a9d5c;
+  --color-success-light: #e8f7ee;
+  --color-warning: #e5a822;
+  --color-warning-light: #fdf5e1;
+  --color-error: #d63b3b;
+  --color-error-light: #fdeaea;
+  --color-info: #0f75e0;
+  --color-info-light: #ebf3fe;
+
+  /* ───────────────────────── Surfaces ───────────────────────────── */
+  --color-bg: #faf9f7;
+  --color-surface: #ffffff;
+  --color-elevated: #ffffff;
+  --color-overlay: rgba(26, 24, 21, 0.6);
+
+  /* ───────────────────────── Typography ─────────────────────────── */
+  /* Display / Headings: DM Serif Display — elegant with warmth       */
+  /* Body: Source Sans 3 — clean readability, not overused             */
+  --font-display: 'DM Serif Display', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+
+  /* Type Scale — 1.25 ratio (Major Third) */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.563rem;   /* 25px */
+  --text-3xl: 1.953rem;   /* ~31px */
+  --text-4xl: 2.441rem;   /* ~39px */
+  --text-5xl: 3.052rem;   /* ~49px */
+
+  /* Line Heights */
+  --leading-xs: 1rem;
+  --leading-sm: 1.25rem;
+  --leading-base: 1.5rem;
+  --leading-lg: 1.75rem;
+  --leading-xl: 1.75rem;
+  --leading-2xl: 2rem;
+  --leading-3xl: 2.375rem;
+  --leading-4xl: 2.875rem;
+  --leading-5xl: 3.5rem;
+
+  /* Font Weights */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.02em;
+  --tracking-wider: 0.05em;
+
+  /* ───────────────────────── Spacing (4px base) ────────────────── */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  /* Section-level spacing */
+  --section-y: var(--space-16);
+  --section-y-lg: var(--space-24);
+  --container-x: var(--space-4);
+  --container-x-sm: var(--space-6);
+  --container-x-lg: var(--space-8);
+
+  /* ───────────────────────── Effects ────────────────────────────── */
+  --shadow-sm: 0 1px 2px rgba(26, 24, 21, 0.05);
+  --shadow-md: 0 4px 12px rgba(26, 24, 21, 0.08);
+  --shadow-lg: 0 12px 32px rgba(26, 24, 21, 0.12);
+
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+}
+
+/* Dark mode overrides (future-proofing) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a1815;
+    --color-surface: #2c2924;
+    --color-elevated: #433f39;
+    --color-overlay: rgba(0, 0, 0, 0.7);
+  }
+}
