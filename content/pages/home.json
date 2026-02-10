@@ -30,15 +30,15 @@
   "stats": [
     {
       "number": "3x",
-      "label": "Angi Super Service Award"
-    },
-    {
-      "number": "40%",
-      "label": "Better Business Bureau A+"
-    },
-    {
-      "number": "99.9%",
       "label": "Nextdoor Neighborhood Fave"
+    },
+    {
+      "number": "A+",
+      "label": "Better Business Bureau"
+    },
+    {
+      "number": "25 Years",
+      "label": "Serving Chicagoland"
     }
   ]
 }
