@@ -26,7 +26,7 @@
     }
   ],
   "hero_subtitle": "Contact us to discuss your interior or exterior painting project.",
-  "hero_badge": "A Nextdoor Neighborhood Fave & BBB A+ Company",
+  "hero_badge": "A Nextdoor Neighborhood Fave",
   "stats": [
     {
       "number": "3x",
@@ -39,6 +39,10 @@
     {
       "number": "25 Years",
       "label": "Serving Chicagoland"
+    },
+    {
+      "number": "7",
+      "label": "Core Values"
     }
   ]
 }
