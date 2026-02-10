@@ -6,6 +6,18 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "global"
+        label: "Global Settings"
+        file: "content/settings.json"
+        fields:
+          - label: "Nav CTA Button Text"
+            name: "nav_cta"
+            widget: "string"
+            hint: "Text for the orange button in the navigation bar (e.g. 'Get a Free Quote')"
+
   - name: "pages"
     label: "Pages"
     files:

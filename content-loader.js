@@ -214,13 +214,32 @@
   };
 
   /**
+   * Apply global site settings (nav CTA, etc.).
+   */
+  function applySettings(data) {
+    setText('[data-cms="nav-cta"]', data.nav_cta);
+  }
+
+  /**
    * Load and apply content.
    */
   function loadContent() {
     var page = getPageName();
     var applier = appliers[page];
-    if (!applier) return;
 
+    // Load global settings (nav CTA text, etc.)
+    fetch('/content/settings.json')
+      .then(function (res) {
+        if (!res.ok) throw new Error('No settings file');
+        return res.json();
+      })
+      .then(function (data) {
+        applySettings(data);
+      })
+      .catch(function () {});
+
+    // Load page-specific content
+    if (!applier) return;
     fetch('/content/pages/' + page + '.json')
       .then(function (res) {
         if (!res.ok) throw new Error('No content file');
