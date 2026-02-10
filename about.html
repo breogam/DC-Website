@@ -89,19 +89,19 @@
 
     <!-- HERO -->
     <section class="hero container">
-      <span class="hero__badge">Founded in 2024</span>
-      <h1 class="hero__title">We believe the web should be <em>fast for everyone</em></h1>
-      <p class="hero__subtitle">DC Website started with a simple frustration: too many tools make the web slower. We set out to build the opposite — a platform where performance and accessibility are the default, not afterthoughts.</p>
+      <span class="hero__badge" data-cms="hero-badge">Founded in 2024</span>
+      <h1 class="hero__title" data-cms="hero-title">We believe the web should be <em>fast for everyone</em></h1>
+      <p class="hero__subtitle" data-cms="hero-subtitle">DC Website started with a simple frustration: too many tools make the web slower. We set out to build the opposite — a platform where performance and accessibility are the default, not afterthoughts.</p>
     </section>
 
     <!-- VALUES -->
     <section class="features container">
       <div class="section__header reveal">
-        <span class="section__label">What drives us</span>
-        <h2 class="section__title">Built on principles, not hype</h2>
-        <p class="section__subtitle">Every decision we make filters through three non-negotiable values.</p>
+        <span class="section__label" data-cms="values-label">What drives us</span>
+        <h2 class="section__title" data-cms="values-title">Built on principles, not hype</h2>
+        <p class="section__subtitle" data-cms="values-subtitle">Every decision we make filters through three non-negotiable values.</p>
       </div>
-      <div class="card-grid">
+      <div class="card-grid" data-cms="values">
         <div class="card reveal reveal-delay-1">
           <div class="card__icon" aria-hidden="true">&#9889;</div>
           <h3 class="card__title">Performance is a feature</h3>
@@ -121,7 +121,7 @@
     </section>
 
     <!-- STATS -->
-    <section class="container reveal">
+    <section class="container reveal" data-cms="stats">
       <div class="stats">
         <div class="stat">
           <div class="stat__number">2,000+</div>
@@ -145,9 +145,9 @@
     <!-- CTA -->
     <section class="container">
       <div class="cta reveal">
-        <h2 class="cta__title">Want to build with us?</h2>
-        <p class="cta__text">We're always looking for people who care about craft. See open roles or reach out directly.</p>
-        <a href="/contact" class="btn btn--primary">Get in touch</a>
+        <h2 class="cta__title" data-cms="cta-title">Want to build with us?</h2>
+        <p class="cta__text" data-cms="cta-text">We're always looking for people who care about craft. See open roles or reach out directly.</p>
+        <a href="/contact" class="btn btn--primary" data-cms="cta-button">Get in touch</a>
       </div>
     </section>
 
@@ -159,6 +159,8 @@
     </div>
   </footer>
 
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script src="/main.js" defer></script>
+  <script src="/content-loader.js" defer></script>
 </body>
 </html>

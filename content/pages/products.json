@@ -1,0 +1,41 @@
+{
+  "hero_badge": "3 products, one platform",
+  "hero_title": "The tools your team *actually needs*",
+  "hero_subtitle": "No feature bloat. Each product solves one problem exceptionally well \u2014 and they all work together seamlessly.",
+  "products": [
+    {
+      "icon": "\ud83d\ude80",
+      "title": "DC Launch",
+      "text": "Go from idea to live site in under 10 minutes. Zero-config deployments with automatic SSL, CDN, and edge caching baked in."
+    },
+    {
+      "icon": "\ud83d\udcc8",
+      "title": "DC Analytics",
+      "text": "Privacy-first analytics with zero cookies. Track what matters \u2014 Core Web Vitals, conversion funnels, and user flows \u2014 without slowing your site."
+    },
+    {
+      "icon": "\ud83d\udd27",
+      "title": "DC Studio",
+      "text": "A visual editor for developers. Design responsive layouts, manage content, and push updates \u2014 all without leaving your workflow."
+    }
+  ],
+  "why_label": "Built different",
+  "why_title": "Why 2,000+ teams chose DC",
+  "reasons": [
+    {
+      "title": "No vendor lock-in",
+      "text": "Export your code and data anytime. Your work is yours. We earn your renewal, we don\u2019t trap you."
+    },
+    {
+      "title": "99.9% uptime SLA",
+      "text": "Backed by multi-region infrastructure and automated failover. Your site stays up when it matters most."
+    },
+    {
+      "title": "Human support, fast",
+      "text": "Average first-response time: 4 minutes. No bots, no ticket queues. Real engineers who understand your stack."
+    }
+  ],
+  "cta_title": "See the difference yourself",
+  "cta_text": "Spin up a project in 2 minutes. No credit card, no commitment \u2014 your first 14 days are on us.",
+  "cta_button": "Start your free trial"
+}

@@ -1,0 +1,79 @@
+{
+  "hero_badge": "14-day free trial on every plan",
+  "hero_title": "One price. *No surprises.*",
+  "hero_subtitle": "Transparent pricing that scales with your team. No hidden fees, no per-seat charges, no usage gotchas.",
+  "plans": [
+    {
+      "name": "Starter",
+      "price": "$29",
+      "period": "/mo",
+      "description": "For solo creators and small projects that need serious performance.",
+      "featured": false,
+      "badge": "",
+      "button_text": "Start free trial",
+      "button_link": "#",
+      "features": [
+        "3 projects",
+        "50 GB bandwidth",
+        "Custom domain + SSL",
+        "Core Web Vitals monitoring",
+        "Email support (under 24h)"
+      ]
+    },
+    {
+      "name": "Professional",
+      "price": "$79",
+      "period": "/mo",
+      "description": "For growing teams who need analytics, collaboration, and priority support.",
+      "featured": true,
+      "badge": "Most popular",
+      "button_text": "Start free trial",
+      "button_link": "#",
+      "features": [
+        "Unlimited projects",
+        "500 GB bandwidth",
+        "DC Analytics included",
+        "Team collaboration (up to 10)",
+        "Priority support (under 4h)",
+        "Staging environments"
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "description": "For organizations that need SLA guarantees, SSO, and dedicated infrastructure.",
+      "featured": false,
+      "badge": "",
+      "button_text": "Talk to sales",
+      "button_link": "/contact",
+      "features": [
+        "Everything in Professional",
+        "Unlimited bandwidth",
+        "SSO / SAML integration",
+        "99.99% uptime SLA",
+        "Dedicated account manager",
+        "Custom contracts"
+      ]
+    }
+  ],
+  "faq_title": "Common questions, straight answers",
+  "faq": [
+    {
+      "question": "Can I switch plans anytime?",
+      "answer": "Yes. Upgrade or downgrade from your dashboard instantly. Changes prorate to the day \u2014 you only pay for what you use."
+    },
+    {
+      "question": "What happens after the trial?",
+      "answer": "Your projects stay live. After 14 days, pick a plan to keep going. No data deleted, no pressure tactics."
+    },
+    {
+      "question": "Do you offer refunds?",
+      "answer": "30-day money-back guarantee on all plans. If DC doesn\u2019t deliver, you get a full refund. No questions asked."
+    },
+    {
+      "question": "Is there a discount for annual billing?",
+      "answer": "Yes \u2014 save 20% when you pay annually. That\u2019s 2.4 months free on every plan."
+    }
+  ]
+}

@@ -123,14 +123,14 @@
 
     <!-- HERO -->
     <section class="hero container">
-      <span class="hero__badge">14-day free trial on every plan</span>
-      <h1 class="hero__title">One price. <em>No surprises.</em></h1>
-      <p class="hero__subtitle">Transparent pricing that scales with your team. No hidden fees, no per-seat charges, no usage gotchas.</p>
+      <span class="hero__badge" data-cms="hero-badge">14-day free trial on every plan</span>
+      <h1 class="hero__title" data-cms="hero-title">One price. <em>No surprises.</em></h1>
+      <p class="hero__subtitle" data-cms="hero-subtitle">Transparent pricing that scales with your team. No hidden fees, no per-seat charges, no usage gotchas.</p>
     </section>
 
     <!-- PRICING CARDS -->
     <section class="container">
-      <div class="pricing-grid">
+      <div class="pricing-grid" data-cms="plans">
         <div class="pricing-card reveal reveal-delay-1">
           <h3 class="pricing-card__name">Starter</h3>
           <div class="pricing-card__price">$29<span>/mo</span></div>
@@ -182,9 +182,9 @@
     <section class="features container">
       <div class="section__header reveal">
         <span class="section__label">FAQ</span>
-        <h2 class="section__title">Common questions, straight answers</h2>
+        <h2 class="section__title" data-cms="faq-title">Common questions, straight answers</h2>
       </div>
-      <div class="card-grid" style="max-width: 800px; margin-inline: auto;">
+      <div class="card-grid" data-cms="faq" style="max-width: 800px; margin-inline: auto;">
         <div class="card reveal">
           <h3 class="card__title">Can I switch plans anytime?</h3>
           <p class="card__text">Yes. Upgrade or downgrade from your dashboard instantly. Changes prorate to the day — you only pay for what you use.</p>
@@ -212,6 +212,8 @@
     </div>
   </footer>
 
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script src="/main.js" defer></script>
+  <script src="/content-loader.js" defer></script>
 </body>
 </html>

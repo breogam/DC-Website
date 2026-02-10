@@ -1,0 +1,217 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+
+      - name: "home"
+        label: "Home Page"
+        file: "content/pages/home.json"
+        fields:
+          - label: "Hero Badge"
+            name: "hero_badge"
+            widget: "string"
+            hint: "Small text above the headline (e.g. 'Trusted by 2,000+ teams')"
+          - label: "Hero Title"
+            name: "hero_title"
+            widget: "string"
+            hint: "Main headline. Wrap a word in *asterisks* to highlight it."
+          - label: "Hero Subtitle"
+            name: "hero_subtitle"
+            widget: "text"
+            hint: "1-2 sentences below the headline"
+          - label: "Primary Button Text"
+            name: "hero_cta_primary"
+            widget: "string"
+          - label: "Secondary Button Text"
+            name: "hero_cta_secondary"
+            widget: "string"
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            max: 4
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "Features Section Label"
+            name: "features_label"
+            widget: "string"
+          - label: "Features Section Title"
+            name: "features_title"
+            widget: "string"
+          - label: "Features Section Subtitle"
+            name: "features_subtitle"
+            widget: "text"
+          - label: "Feature Cards"
+            name: "features"
+            widget: "list"
+            max: 3
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "text", widget: "text" }
+          - label: "CTA Title"
+            name: "cta_title"
+            widget: "string"
+          - label: "CTA Text"
+            name: "cta_text"
+            widget: "text"
+          - label: "CTA Button Text"
+            name: "cta_button"
+            widget: "string"
+
+      - name: "about"
+        label: "About Page"
+        file: "content/pages/about.json"
+        fields:
+          - label: "Hero Badge"
+            name: "hero_badge"
+            widget: "string"
+          - label: "Hero Title"
+            name: "hero_title"
+            widget: "string"
+          - label: "Hero Subtitle"
+            name: "hero_subtitle"
+            widget: "text"
+          - label: "Values Section Label"
+            name: "values_label"
+            widget: "string"
+          - label: "Values Section Title"
+            name: "values_title"
+            widget: "string"
+          - label: "Values Section Subtitle"
+            name: "values_subtitle"
+            widget: "text"
+          - label: "Value Cards"
+            name: "values"
+            widget: "list"
+            max: 3
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "text", widget: "text" }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            max: 4
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "CTA Title"
+            name: "cta_title"
+            widget: "string"
+          - label: "CTA Text"
+            name: "cta_text"
+            widget: "text"
+          - label: "CTA Button Text"
+            name: "cta_button"
+            widget: "string"
+
+      - name: "products"
+        label: "Products Page"
+        file: "content/pages/products.json"
+        fields:
+          - label: "Hero Badge"
+            name: "hero_badge"
+            widget: "string"
+          - label: "Hero Title"
+            name: "hero_title"
+            widget: "string"
+          - label: "Hero Subtitle"
+            name: "hero_subtitle"
+            widget: "text"
+          - label: "Product Cards"
+            name: "products"
+            widget: "list"
+            max: 3
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Name", name: "title", widget: "string" }
+              - { label: "Description", name: "text", widget: "text" }
+          - label: "Why Section Label"
+            name: "why_label"
+            widget: "string"
+          - label: "Why Section Title"
+            name: "why_title"
+            widget: "string"
+          - label: "Reason Cards"
+            name: "reasons"
+            widget: "list"
+            max: 3
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "text", widget: "text" }
+          - label: "CTA Title"
+            name: "cta_title"
+            widget: "string"
+          - label: "CTA Text"
+            name: "cta_text"
+            widget: "text"
+          - label: "CTA Button Text"
+            name: "cta_button"
+            widget: "string"
+
+      - name: "pricing"
+        label: "Pricing Page"
+        file: "content/pages/pricing.json"
+        fields:
+          - label: "Hero Badge"
+            name: "hero_badge"
+            widget: "string"
+          - label: "Hero Title"
+            name: "hero_title"
+            widget: "string"
+          - label: "Hero Subtitle"
+            name: "hero_subtitle"
+            widget: "text"
+          - label: "Pricing Plans"
+            name: "plans"
+            widget: "list"
+            max: 3
+            fields:
+              - { label: "Plan Name", name: "name", widget: "string" }
+              - { label: "Price", name: "price", widget: "string", hint: "e.g. $29, Custom" }
+              - { label: "Price Period", name: "period", widget: "string", required: false, hint: "e.g. /mo" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Featured?", name: "featured", widget: "boolean", default: false }
+              - { label: "Badge Text", name: "badge", widget: "string", required: false }
+              - { label: "Button Text", name: "button_text", widget: "string" }
+              - { label: "Button Link", name: "button_link", widget: "string" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: { label: "Feature", name: "feature", widget: "string" }
+          - label: "FAQ Section Title"
+            name: "faq_title"
+            widget: "string"
+          - label: "FAQ Items"
+            name: "faq"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+
+      - name: "contact"
+        label: "Contact Page"
+        file: "content/pages/contact.json"
+        fields:
+          - label: "Hero Title"
+            name: "hero_title"
+            widget: "string"
+          - label: "Hero Subtitle"
+            name: "hero_subtitle"
+            widget: "text"
+          - label: "Contact Cards"
+            name: "contacts"
+            widget: "list"
+            max: 3
+            fields:
+              - { label: "Department", name: "title", widget: "string" }
+              - { label: "Description", name: "text", widget: "text" }
+              - { label: "Email", name: "email", widget: "string" }
