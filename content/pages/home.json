@@ -1,0 +1,36 @@
+{
+  "hero_badge": "Trusted by 2,000+ teams worldwide",
+  "hero_title": "Ship your best work *3x faster*",
+  "hero_subtitle": "Stop wrestling with slow tools. DC Website gives your team a performance-first platform that loads in under 1 second and converts 40% more visitors.",
+  "hero_cta_primary": "Start your free trial",
+  "hero_cta_secondary": "See how it works",
+  "stats": [
+    { "number": "3x", "label": "Faster load times" },
+    { "number": "40%", "label": "More conversions" },
+    { "number": "99.9%", "label": "Uptime guaranteed" },
+    { "number": "2,000+", "label": "Teams shipping daily" }
+  ],
+  "features_label": "Why teams switch",
+  "features_title": "Everything you need to launch faster",
+  "features_subtitle": "No bloat. No lock-in. Your team gets a lean, powerful toolkit that stays out of the way.",
+  "features": [
+    {
+      "icon": "\u26a1",
+      "title": "Sub-second performance",
+      "text": "Every page loads in under 1 second. Your visitors stay engaged, your bounce rate drops, and your SEO scores climb."
+    },
+    {
+      "icon": "\u267b",
+      "title": "Built-in accessibility",
+      "text": "WCAG AA compliant out of the box. Reach 100% of your audience without retrofitting or third-party overlays."
+    },
+    {
+      "icon": "\ud83d\udee0",
+      "title": "Developer-first workflow",
+      "text": "Clean APIs, zero config defaults, and hot reload. Your team ships features instead of fighting tooling."
+    }
+  ],
+  "cta_title": "Ready to build something remarkable?",
+  "cta_text": "Join 2,000+ teams who stopped compromising on speed. Your 14-day free trial starts now.",
+  "cta_button": "Start building for free"
+}

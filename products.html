@@ -104,14 +104,14 @@
 
     <!-- HERO -->
     <section class="hero container">
-      <span class="hero__badge">3 products, one platform</span>
-      <h1 class="hero__title">The tools your team <em>actually needs</em></h1>
-      <p class="hero__subtitle">No feature bloat. Each product solves one problem exceptionally well — and they all work together seamlessly.</p>
+      <span class="hero__badge" data-cms="hero-badge">3 products, one platform</span>
+      <h1 class="hero__title" data-cms="hero-title">The tools your team <em>actually needs</em></h1>
+      <p class="hero__subtitle" data-cms="hero-subtitle">No feature bloat. Each product solves one problem exceptionally well — and they all work together seamlessly.</p>
     </section>
 
     <!-- PRODUCT CARDS -->
     <section class="features container">
-      <div class="card-grid">
+      <div class="card-grid" data-cms="products">
         <div class="card reveal reveal-delay-1">
           <div class="card__icon" aria-hidden="true">&#128640;</div>
           <h3 class="card__title">DC Launch</h3>
@@ -136,10 +136,10 @@
     <!-- WHY TEAMS CHOOSE -->
     <section class="features container">
       <div class="section__header reveal">
-        <span class="section__label">Built different</span>
-        <h2 class="section__title">Why 2,000+ teams chose DC</h2>
+        <span class="section__label" data-cms="why-label">Built different</span>
+        <h2 class="section__title" data-cms="why-title">Why 2,000+ teams chose DC</h2>
       </div>
-      <div class="card-grid">
+      <div class="card-grid" data-cms="reasons">
         <div class="card reveal reveal-delay-1">
           <h3 class="card__title">No vendor lock-in</h3>
           <p class="card__text">Export your code and data anytime. Your work is yours. We earn your renewal, we don't trap you.</p>
@@ -158,9 +158,9 @@
     <!-- CTA -->
     <section class="container">
       <div class="cta reveal">
-        <h2 class="cta__title">See the difference yourself</h2>
-        <p class="cta__text">Spin up a project in 2 minutes. No credit card, no commitment — your first 14 days are on us.</p>
-        <a href="/pricing" class="btn btn--primary">Start your free trial</a>
+        <h2 class="cta__title" data-cms="cta-title">See the difference yourself</h2>
+        <p class="cta__text" data-cms="cta-text">Spin up a project in 2 minutes. No credit card, no commitment — your first 14 days are on us.</p>
+        <a href="/pricing" class="btn btn--primary" data-cms="cta-button">Start your free trial</a>
       </div>
     </section>
 
@@ -172,6 +172,8 @@
     </div>
   </footer>
 
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script src="/main.js" defer></script>
+  <script src="/content-loader.js" defer></script>
 </body>
 </html>

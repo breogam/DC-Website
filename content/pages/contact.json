@@ -1,0 +1,21 @@
+{
+  "hero_title": "Let\u2019s talk about *your project*",
+  "hero_subtitle": "Average response time: 4 minutes during business hours. Send us a message and a real engineer will get back to you \u2014 not a bot.",
+  "contacts": [
+    {
+      "title": "Support",
+      "text": "Existing customer? Our support team responds in under 4 minutes during business hours.",
+      "email": "support@dc-website.com"
+    },
+    {
+      "title": "Sales",
+      "text": "Need a custom plan or want a product walkthrough? Our team can set up a 15-minute demo.",
+      "email": "sales@dc-website.com"
+    },
+    {
+      "title": "Partnerships",
+      "text": "Interested in integrations, reseller programs, or co-marketing? We\u2019re open to creative collaborations.",
+      "email": "partners@dc-website.com"
+    }
+  ]
+}

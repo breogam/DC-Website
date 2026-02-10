@@ -1,0 +1,34 @@
+{
+  "hero_badge": "Founded in 2024",
+  "hero_title": "We believe the web should be *fast for everyone*",
+  "hero_subtitle": "DC Website started with a simple frustration: too many tools make the web slower. We set out to build the opposite \u2014 a platform where performance and accessibility are the default, not afterthoughts.",
+  "values_label": "What drives us",
+  "values_title": "Built on principles, not hype",
+  "values_subtitle": "Every decision we make filters through three non-negotiable values.",
+  "values": [
+    {
+      "icon": "\u26a1",
+      "title": "Performance is a feature",
+      "text": "Every millisecond matters to your users. We benchmark obsessively so you never have to apologize for a slow page."
+    },
+    {
+      "icon": "\u267b",
+      "title": "Accessibility by default",
+      "text": "15% of the world lives with a disability. Building accessible experiences isn\u2019t charity \u2014 it\u2019s reaching your full audience."
+    },
+    {
+      "icon": "\ud83d\udcaa",
+      "title": "Simplicity scales",
+      "text": "Complexity is a liability. We ship fewer features that work perfectly rather than dozens that almost work."
+    }
+  ],
+  "stats": [
+    { "number": "2,000+", "label": "Teams trust DC" },
+    { "number": "12M", "label": "Pages served monthly" },
+    { "number": "18", "label": "Team members" },
+    { "number": "4", "label": "Continents represented" }
+  ],
+  "cta_title": "Want to build with us?",
+  "cta_text": "We\u2019re always looking for people who care about craft. See open roles or reach out directly.",
+  "cta_button": "Get in touch"
+}
