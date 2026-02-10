@@ -11,17 +11,17 @@
   "features": [
     {
       "icon": "⚡",
-      "title": "Sub-second performance",
-      "text": "Every page loads in under 1 second. Your visitors stay engaged, your bounce rate drops, and your SEO scores climb."
+      "title": "Interior Painting",
+      "text": "WCAG AA compliant out of the box. Reach 100% of your audience without retrofitting or third-party overlays."
     },
     {
       "icon": "♻",
-      "title": "Built-in accessibility",
+      "title": "Restoration",
       "text": "WCAG AA compliant out of the box. Reach 100% of your audience without retrofitting or third-party overlays."
     },
     {
       "icon": "🛠",
-      "title": "Developer-first workflow",
+      "title": "Exterior Painting",
       "text": "Clean APIs, zero config defaults, and hot reload. Your team ships features instead of fighting tooling."
     }
   ],
