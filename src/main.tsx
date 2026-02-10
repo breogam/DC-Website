@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './index.css'
 import Design1 from './designs/Design1'
 import Design2 from './designs/Design2'
@@ -28,7 +28,7 @@ function DesignPicker() {
           ].map((d) => (
             <a
               key={d.id}
-              href={`/${d.id}`}
+              href={`#/${d.id}`}
               className={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${d.color} p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl`}
             >
               <span className="block text-5xl font-serif font-bold text-white/90 mb-2 group-hover:text-white transition-colors">
@@ -47,7 +47,7 @@ function DesignPicker() {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<DesignPicker />} />
         <Route path="/1" element={<Design1 />} />
@@ -57,6 +57,6 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/5" element={<Design5 />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 )
