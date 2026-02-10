@@ -13,8 +13,22 @@
    */
   function getPageName() {
     var path = window.location.pathname.replace(/\/$/, '').replace(/\.html$/, '');
-    if (path === '' || path === '/index') return 'home';
-    return path.replace(/^\//, '');
+    var segments = path.split('/').filter(Boolean);
+    var lastSegment = segments.length ? segments[segments.length - 1] : 'index';
+    if (lastSegment === 'index') return 'home';
+    return lastSegment;
+  }
+
+  /**
+   * Build the base URL for fetching content files (handles GitHub Pages subdirectory).
+   */
+  function getBaseUrl() {
+    var scripts = document.querySelectorAll('script[src*="content-loader"]');
+    if (scripts.length) {
+      var src = scripts[0].getAttribute('src');
+      return src.replace(/content-loader\.js$/, '');
+    }
+    return '';
   }
 
   /**
@@ -227,8 +241,10 @@
     var page = getPageName();
     var applier = appliers[page];
 
+    var base = getBaseUrl();
+
     // Load global settings (nav CTA text, etc.)
-    fetch('/content/settings.json')
+    fetch(base + 'content/settings.json')
       .then(function (res) {
         if (!res.ok) throw new Error('No settings file');
         return res.json();
@@ -240,7 +256,7 @@
 
     // Load page-specific content
     if (!applier) return;
-    fetch('/content/pages/' + page + '.json')
+    fetch(base + 'content/pages/' + page + '.json')
       .then(function (res) {
         if (!res.ok) throw new Error('No content file');
         return res.json();

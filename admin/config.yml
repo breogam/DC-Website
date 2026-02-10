@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: breogam/DC-Website
   branch: main
 
 media_folder: "images"
